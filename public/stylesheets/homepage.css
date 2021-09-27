@@ -1,0 +1,220 @@
+* {
+  font-weight: 500;
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border: 3px solid #ffffff;
+}
+
+body > h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+body > h2 {
+  text-align: center;
+}
+
+.outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 3000px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  border: 1px solid #ebd0d0;
+  -webkit-box-shadow: 0 4px 4px #cab2b2;
+          box-shadow: 0 4px 4px #cab2b2;
+  border-radius: 18px;
+  width: 650px;
+  margin: 0 auto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 11px;
+  background: rgba(224, 223, 223, 0.1);
+}
+
+.wrapper span {
+  font-weight: 800;
+}
+
+.wrapper .left {
+  float: left;
+}
+
+.wrapper .left .edit_delete {
+  text-align: center;
+}
+
+.wrapper .left .edit_delete a button {
+  background-color: #3acefd;
+  border: 1px solid #3acefd;
+  -webkit-box-shadow: 0 4px 4px #cab2b2;
+          box-shadow: 0 4px 4px #cab2b2;
+  border-radius: 8px;
+  width: 40%;
+  padding: 3px;
+}
+
+.wrapper .left .edit_delete form {
+  display: inline;
+}
+
+.wrapper .left .edit_delete form button {
+  background-color: #ff5959;
+  border: 1px solid #ff5959;
+  -webkit-box-shadow: 0 4px 4px #cab2b2;
+          box-shadow: 0 4px 4px #cab2b2;
+  border-radius: 8px;
+  padding: 3px;
+  width: 50%;
+}
+
+.wrapper .left img {
+  height: 352px;
+  width: 100%;
+  border-radius: 18px;
+  -webkit-box-shadow: 0 4px 4px #f5ecec;
+          box-shadow: 0 4px 4px #f5ecec;
+}
+
+.wrapper .right {
+  float: right;
+  width: 50%;
+}
+
+.wrapper .right .container h1 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 0px;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.wrapper .right .container h4 {
+  margin-top: -20px;
+  font-size: 24px;
+}
+
+.wrapper .right .container-bottom {
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.wrapper .right .container-bottom h4 {
+  margin-top: -20px;
+}
+
+.wrapper .right .container-bottom > textarea {
+  max-width: 100%;
+  min-width: 100%;
+  border: 1px solid #fff3f3;
+  -webkit-box-shadow: 0 4px 4px #cab2b2;
+          box-shadow: 0 4px 4px #cab2b2;
+  border-radius: 13px;
+  height: 200px;
+  resize: none;
+  padding: 20px;
+}
+
+.wrapper .right textarea {
+  width: 100%;
+  border: 1px solid #fff3f3;
+  -webkit-box-shadow: 0 4px 4px #cab2b2;
+          box-shadow: 0 4px 4px #cab2b2;
+  border-radius: 10px;
+  resize: none;
+}
+
+.wrapper h1,
+.wrapper h4 {
+  text-align: right;
+}
+
+.bottom {
+  clear: both;
+  margin-top: 400px;
+}
+
+.bottom .view-comments {
+  height: 35px;
+  border: 1px solid #7bec86;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #7bec86;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.bottom .comment {
+  margin-top: 10px;
+}
+
+.bottom .comment .input-button input {
+  float: left;
+  width: 85%;
+  border: 1px solid #ffecec;
+  -webkit-box-shadow: 0 4px 4px #c4bcbc;
+          box-shadow: 0 4px 4px #c4bcbc;
+  border-radius: 9px;
+  height: 35px;
+}
+
+.bottom .comment .input-button button {
+  float: right;
+  height: 35px;
+  border: 1px solid #7bec86;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #7bec86;
+  padding: 5px 10px;
+}
+
+.bottom .comment p {
+  text-align: center;
+}
+
+.bottom .comment p a {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+.bottom .comment-section p {
+  word-break: break-word;
+  padding: 10px;
+  border: 1px solid #d3cbcb;
+  border-radius: 13px;
+  -webkit-box-shadow: 0 4px 4px #cab2b2;
+          box-shadow: 0 4px 4px #cab2b2;
+  height: auto;
+}
+
+.bottom .comment-section button {
+  height: 35px;
+  border: 1px solid #ff5959;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #ff5959;
+  padding: 5px 10px;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=homepage.css.map */

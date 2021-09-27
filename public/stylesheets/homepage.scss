@@ -1,0 +1,231 @@
+$book-color: #ebd0d0;
+$button_delete: #ff5959;
+$button_edit: #3acefd;
+
+* {
+  font-weight: 500;
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border: 3px solid #ffffff;
+}
+
+body {
+  
+  > h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  > h2 {
+    text-align: center;
+  }
+}
+
+.outer {
+  display:flex;
+  flex-wrap:wrap;
+  max-width: 3000px;
+  margin: 0 auto;
+
+}
+
+.wrapper {
+  border: 1px solid $book-color;
+  box-shadow: 0 4px 4px #cab2b2;
+  border-radius: 18px;
+  width: 650px;
+  margin: 0 auto;
+  height: min-content;
+  padding: 11px;
+  background: rgba(224, 223, 223, 0.1);
+  
+ 
+  span {
+    font-weight: 800;
+  }
+
+  .left {
+    float: left;
+
+    .edit_delete {
+      text-align: center;
+
+      a {
+        button {
+          background-color: $button_edit;
+          border: 1px solid $button_edit;
+          box-shadow: 0 4px 4px #cab2b2;
+          border-radius: 8px;
+          width: 40%;
+          padding: 3px;
+        }
+      }
+      form {
+        display: inline;
+        button {
+          background-color: $button_delete;
+          border: 1px solid $button_delete;
+          box-shadow: 0 4px 4px #cab2b2;
+          border-radius: 8px;
+          padding: 3px;
+          width: 50%;
+        }
+      }
+    }
+    img {
+      height: 352px;
+      // width: 254px;
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 4px 4px #f5ecec;
+    }
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+
+    
+
+    .container {
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        margin-top: 0px;
+        white-space: nowrap;
+        overflow: auto;
+      }
+      h4 {
+        margin-top: -20px;
+        font-size: 24px;
+      }
+    }
+
+    .container-bottom {
+      margin-top: 50px;
+      margin-right: 10px;
+
+      h4 {
+        margin-top: -20px;
+      }
+
+      > textarea {
+        max-width: 100%;
+        min-width: 100%;
+        border: 1px solid #fff3f3;
+        box-shadow: 0 4px 4px #cab2b2;
+        border-radius: 13px;
+        height: 200px;
+        resize: none;
+        padding: 20px;
+      }
+    }
+
+
+    textarea {
+      width: 100%;
+      border: 1px solid #fff3f3;
+      box-shadow: 0 4px 4px #cab2b2;
+      border-radius: 10px;
+      resize: none;
+    }
+
+       
+    }
+
+    h1,
+    h4 {
+      text-align: right;
+    }
+  }
+
+  .bottom {
+    clear: both;
+    margin-top: 400px;
+
+    .view-comments {
+      height: 35px;
+      border: 1px solid #7bec86;
+      border-radius: 5px;
+      font-size: 17px;
+      background-color: #7bec86;
+      padding: 5px 10px;
+      margin-top: 10px;
+    }
+
+    .comment {
+      margin-top: 10px;
+
+      .input-button {
+        input {
+          float: left;
+          width: 85%;
+          border: 1px solid #ffecec;
+          box-shadow: 0 4px 4px #c4bcbc;
+          border-radius: 9px;
+          height: 35px;
+        }
+
+        
+
+        button {
+          float: right;
+          height: 35px;
+          border: 1px solid #7bec86;
+          border-radius: 5px;
+          font-size: 17px;
+          background-color: #7bec86;
+          padding: 5px 10px;
+        }
+      }
+
+      p {
+        text-align: center;
+
+        a {
+          font-weight: 700;
+          text-decoration: none;
+          color: black;
+        }
+       }
+    }   
+
+    .comment-section {
+      
+      p {
+        word-break: break-word;
+        padding: 10px;
+        border: 1px solid #d3cbcb;
+        border-radius: 13px;
+        box-shadow: 0 4px 4px #cab2b2;
+        height: auto;
+       
+      }
+
+      button {
+        
+        height: 35px;
+        border: 1px solid $button_delete;
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: $button_delete;
+        padding: 5px 10px;
+      }
+    }
+}
+
+.hidden {
+  display: none;
+  
+}

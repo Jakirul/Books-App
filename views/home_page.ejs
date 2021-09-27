@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+    <link rel="stylesheet" href="stylesheets/homepage.css" />
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+
+    <h1>Books List</h1>
+
+    <% if (books.length < 1) { %>
+      <h2>No books found! Add one</h2>
+    <% } else { %>
+      
+    <div class="outer">
+      <% for (let i=0; i < books.length; i++) { %>
+        <div class="wrapper">
+          <div class="left">
+            <img src="<%= books[i].image %>" />
+              <% if (currentUser && currentUser.username == books[i].post_author) { %>
+                <div class="edit_delete">
+                  <a href="<%= books[i]._id %>/edit"><button>Edit</button></a>
+                  <form action="/<%= books[i]._id %>?_method=DELETE" method="POST">
+                    <button>DELETE</button>
+                  </form>
+                </div>
+              <% } %>
+          </div>
+          <div class="right">
+            <div class="container">
+              <h1><%= books[i].book_name %></h1>
+              <h4><%= books[i].author %></h4>
+            </div>
+            <div class="container-bottom">
+              <h4>User: <%= books[i].post_author %></h4>
+              <h4>Category: <%= books[i].category %></h4>
+              <textarea readonly><%= books[i].description %></textarea>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <div class="comment">
+                <% if (currentUser) { %>
+                  <form action="/books/<%= books[i]._id %>/comments" method="POST">
+                    <div class="input-button">
+                      <input type="text" name="comment"  maxlength="100" required/>
+                      <button>Submit</button>
+                    </div>
+                  </form>
+                  <div style="clear:both"></div>
+                <% } else { %>
+                  <p>Please <a href="/login">sign in </a>to comment</p>
+                <% } %> 
+              </div>
+              
+              <button class="view-comments">View Comments</button>
+              
+              <div class="comment-section hidden">
+                <% if (books[i].comments.length < 1) { %>
+                  <h4 style="text-align: center">No comments, be the first!</h4>
+                <% } else { %>
+                  <% for(let comment of books[i].comments) { %>
+                  <p><span><%= comment.author.username %></span><br> <%= comment.body %> </p>
+                
+                  <% if (currentUser) { %>
+                    <% if (currentUser._id.equals(comment.author._id) || books[i].post_author ===(currentUser.username)) { %>
+                      <form action="/books/<%= books[i]._id %>/<%= comment._id %>?_method=DELETE" method="POST">
+                        <button>Delete</button>
+                      </form>
+                    <% } %> 
+                  <% } %> 
+                <% } %> 
+                <% } %> 
+              </div>
+              
+            </div>
+            
+          </div>
+      <% } %>
+    </div>
+    <% } %>
+
+    <script>
+      const comment = document.querySelectorAll(".hidden");
+      const viewcomments = document.querySelectorAll(".view-comments");
+      const wrappers = document.querySelectorAll(".wrapper");
+     
+      viewcomments.forEach(commentz => {
+        commentz.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        const clickedBtnIndex = [...viewcomments].indexOf(evt.target);
+        comment[clickedBtnIndex].classList.toggle("hidden");
+        if (viewcomments[clickedBtnIndex].innerHTML == "View Comments") {
+          viewcomments[clickedBtnIndex].innerHTML = "Close comments";
+        } else {
+          viewcomments[clickedBtnIndex].innerHTML = "View Comments";
+        }
+      })
+      })
+
+      
+     
+
+    </script>
+  </body>
+</html>

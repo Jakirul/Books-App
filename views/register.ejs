@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+</head>
+<body>
+    <%- include('navbar'); -%>
+
+    
+    <div class="wrapper" style="height: 550px; background: rgba(204, 201, 201, 0.1)">
+        <h1>Register</h1>
+        <form action="/register" method="POST">
+        
+            <div class="inner-wrapper">
+                <label for="username">Username</label>
+                <input type="text" name="username">
+            
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
+
+            <div class="button">
+                <button>Register</button>
+                
+                <h3>Already have an account? <a href="/login"><span>Login Here</span></a></h3>
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>

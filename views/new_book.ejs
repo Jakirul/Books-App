@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App!</title>
+    
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <%- include('navbar'); -%>
+    
+    <div class="book-wrapper" style="margin-bottom: 1000px">
+        <h1>Create new Book Listing</h1>
+        
+        <form action="/new_book" method="POST">
+            <div class="inner-book-wrapper">
+                <label for="book_name">Book Name</label>
+                <input type="text" name="book_name" required>
+                
+                <label for="author">Author</label>
+                <input type="text" name="author" required>
+                
+                <label for="category">Category</label>
+                <input type="text" name="category" required>
+                
+                <label style="text-align: center" for="image">Image - (to make the image fit - please add books with the 1.6:1 ratio - Follow the example images on the home page)</label>
+                <input type="text" name="image" required>
+                
+                <label for="description">Description - How do you feel about this book?</label>
+                <input type="text" name="description" required>
+            </div>
+        
+            <div class="book-button">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>

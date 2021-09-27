@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/edit_page.css">
+    <title>Edit </title>
+    
+</head>
+<body>
+    <%- include('navbar'); -%>
+
+    <div class="wrapper">
+        <h1>Edit a Book Post</h1>
+        <form action="/<%= book[0]._id %>/edit?_method=PUT" method="POST">
+            <div class="inner-wrapper">
+                <label for="book_name">Book Name </label>
+                <input name="book_name" id="book_name" value="<%= book[0].book_name %>" required>
+     
+                <label for="author">Author</label>
+                <input name="author" id="author" value="<%= book[0].author %>" required>
+
+                <label for="category">Category</label>
+                <input name="category" id="category" value="<%= book[0].category %>" required>
+  
+                <label for="image">Image</label>
+                <input name="image" id="image" placeholder="image url" value="<%= book[0].image %>" required>
+
+                <label for="description">Description</label>
+                <textarea type="text" name="description" id="description" name="" id="" cols="30" rows="10"><%= book[0].description %></textarea>
+
+            </div>
+
+            
+            <div class="button">
+                <button>Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

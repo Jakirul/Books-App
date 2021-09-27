@@ -1,0 +1,69 @@
+@import "./navbar.scss";
+
+.wrapper {
+  border: 1px solid #ebdbdb;
+  border-radius: 18px;
+  width: 600px;
+  height: 500px;
+  margin: 22px auto;
+  box-shadow: 0 4px 4px #e6dbdb;
+  padding-bottom: 20px;
+  position: relative;
+
+  background: rgba(167, 160, 160, 0.1);
+
+  h1 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .button {
+    text-align: center;
+    margin-top: 15px;
+
+    button {
+      border: 1px solid #7bec86;
+      border-radius: 5px;
+      font-size: 17px;
+      background-color: #7bec86;
+      padding: 5px 10px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .inner-wrapper {
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 50px;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid #ffecec;
+      box-shadow: 0 4px 4px #c4bcbc;
+      border-radius: 12px;
+      height: 40px;
+    }
+  }
+}

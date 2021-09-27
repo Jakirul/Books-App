@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+
+</head>
+<body>
+    <%- include('navbar'); -%>
+  
+
+    <div class="wrapper" style="background: rgba(204, 201, 201, 0.1);">
+        <h1>Sign In</h1>
+        <form action="/login" method="POST">
+            <div class="inner-wrapper">
+                <label for="username">Username</label>
+                <input type="text" name="username">
+                
+                <label for="password">Password</label>
+                <input type="text" name="password">
+            </div>
+
+            <div class="button">
+                <button>Sign In</button>
+
+                <h3>Don't have an account? <a href="/register"><span>Register here</span></a></h3>
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>

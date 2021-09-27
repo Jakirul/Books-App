@@ -1,0 +1,143 @@
+* {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+body {
+  padding-top: 100px;
+  background-color: #f5f5f5;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.nav-bar .left .hovers {
+  float: left;
+  margin-left: 20px;
+  padding: 3px;
+}
+
+.nav-bar .left .hovers a {
+  text-decoration: none;
+  color: #a57c7c;
+}
+
+.nav-bar .left .hovers:hover {
+  height: 100%;
+  background-color: #cad8d3;
+}
+
+.nav-bar .right .hovers {
+  padding: 3px;
+  float: right;
+  margin-right: 20px;
+}
+
+.nav-bar .right .hovers a {
+  text-decoration: none;
+  color: #a57c7c;
+  display: inline;
+}
+
+.nav-bar .right .hovers:hover {
+  height: 100%;
+  background-color: #cad8d3;
+}
+
+.flash {
+  background-color: #cab2b2;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.flash h1 {
+  font-size: 20px;
+}
+
+.wrapper {
+  margin-top: 30px;
+}
+
+.book-wrapper {
+  margin-top: 30px;
+}
+
+* {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  border: 1px solid #ebdbdb;
+  border-radius: 18px;
+  width: 600px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 4px 4px #e6dbdb;
+          box-shadow: 0 4px 4px #e6dbdb;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.wrapper h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.wrapper .button {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.wrapper .button button {
+  border: 1px solid #7bec86;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #7bec86;
+  padding: 5px 10px;
+}
+
+.wrapper .inner-wrapper {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.wrapper .inner-wrapper label {
+  display: block;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.wrapper .inner-wrapper input {
+  width: 100%;
+  border: 1px solid #ffecec;
+  -webkit-box-shadow: 0 4px 4px #c4bcbc;
+          box-shadow: 0 4px 4px #c4bcbc;
+  border-radius: 9px;
+  height: 35px;
+}
+
+.wrapper .inner-wrapper textarea {
+  width: 100%;
+  border: 1px solid #fff3f3;
+  -webkit-box-shadow: 0 4px 4px #cab2b2;
+          box-shadow: 0 4px 4px #cab2b2;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+}
+/*# sourceMappingURL=edit_page.css.map */

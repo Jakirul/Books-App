@@ -1,0 +1,60 @@
+* {
+  font-weight: 500;
+}
+
+.book-wrapper {
+  border: 1px solid #ebdbdb;
+  border-radius: 18px;
+  width: 600px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 4px 4px #e6dbdb;
+          box-shadow: 0 4px 4px #e6dbdb;
+  padding-bottom: 20px;
+  height: auto;
+  background: rgba(224, 223, 223, 0.1);
+  /* Green background with 30% opacity */
+}
+
+.book-wrapper h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.book-wrapper .book-button {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.book-wrapper .book-button button {
+  border: 1px solid #7bec86;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #7bec86;
+  padding: 5px 10px;
+}
+
+.book-wrapper .inner-book-wrapper {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.book-wrapper .inner-book-wrapper label {
+  display: block;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.book-wrapper .inner-book-wrapper input:last-child {
+  padding: 5px 5px 100px 5px;
+}
+
+.book-wrapper .inner-book-wrapper input {
+  width: 100%;
+  border: 1px solid #ffecec;
+  -webkit-box-shadow: 0 4px 4px #cab2b2;
+          box-shadow: 0 4px 4px #cab2b2;
+  border-radius: 12px;
+  height: 35px;
+}
+/*# sourceMappingURL=style.css.map */

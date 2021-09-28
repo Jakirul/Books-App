@@ -13,7 +13,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 
   .left .hovers {
     float: left;
@@ -67,4 +67,65 @@ body {
 
 .book-wrapper {
   margin-top: 30px;
+}
+
+.close1 {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+  .hiddennav {
+    display: none;
+  }
+  .close1 {
+    display: block;
+      position: relative;
+      width: auto;
+      z-index: 1;
+      .close {
+        position: absolute;
+        font-size: 50px;
+        right: 15px;
+        top: -100px;
+      }
+    }
+
+  .nav-bar {
+    
+    text-align: center;
+    width: 90%;
+    position: absolute;
+
+    
+    
+    .left {
+      .hovers {
+       float: none;
+       width: 100%;
+        text-align: center;
+       
+        h2 {
+          text-align: center;
+        }
+        
+      }
+     
+    }
+
+    .right {
+      .hovers {
+        float: none;
+        width: 100%;
+        text-align: center;
+
+         h2 {
+          text-align: center;
+        }
+      }
+      
+    }
+  }
+
+  
 }

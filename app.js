@@ -19,7 +19,8 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const flash = require('connect-flash')
 const {isLoggedIn, isAuthor} = require('./middlewares.js')
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/books-app';
+const dbUrl = (process.env.NODE_ENV !== "production" ? 'mongodb://localhost:27017/books-app' : process.env.DB_URL )
+
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true

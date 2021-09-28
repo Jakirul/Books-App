@@ -56,3 +56,18 @@ $bordercolor: rgba(238, 230, 227, 1);
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .nav-bar   {
+    margin-top: -60px;
+    position: relative !important;
+  }
+  .book-wrapper {
+    width: 95%;
+   
+
+    .inner-book-wrapper {
+      width: 90%;
+    }
+  }
+}

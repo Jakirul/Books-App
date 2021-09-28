@@ -3,7 +3,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="stylesheets/navbar.css">
 
-<div class="nav-bar">
+<div class="close1">
+    <a class="close">X</a>
+</div>
+<div class="nav-bar hiddennav">
     <div class="left">
         <div class="hovers">
             <a href="/home_page">
@@ -37,6 +40,7 @@
             </div>
         <% } %> 
     </div>
+    
 </div>
 
 <div class="flash">
@@ -50,3 +54,14 @@
         </h1>
     <% } %>
 </div>
+
+<script>
+    const div = document.querySelector(".nav-bar");
+    const a = document.querySelector(".close");
+
+    a.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        console.log("clicked")
+        div.classList.toggle("hiddennav");
+    })
+</script>

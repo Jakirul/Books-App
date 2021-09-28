@@ -1,3 +1,4 @@
+
 $book-color: #ebd0d0;
 $button_delete: #ff5959;
 $button_edit: #3acefd;
@@ -167,7 +168,7 @@ body {
     .comment {
       margin-top: 10px;
 
-      .input-button {
+      
         input {
           float: left;
           width: 85%;
@@ -187,7 +188,7 @@ body {
           font-size: 17px;
           background-color: #7bec86;
           padding: 5px 10px;
-        }
+        
       }
 
       p {
@@ -228,4 +229,68 @@ body {
 .hidden {
   display: none;
   
+}
+
+@media screen and (max-width: 670px) {
+  .nav-bar   {
+    margin-top: -60px;
+    position: relative !important;
+  }
+
+  .wrapper {
+    height: auto;
+    width: 95%;
+
+    .left {
+      text-align: center;
+      width: 100%;
+
+      img {
+        width: auto;
+      }
+    }
+
+    .right {
+      width: 100%;
+      .container {
+        h1,h4 {
+          text-align: center;
+        }
+        
+      }
+
+      .container-bottom {
+        h4 {
+          text-align: center;
+        }
+      }
+    }
+
+    .bottom {
+      margin: 0 auto;
+      text-align: center;
+            
+      .comment {
+        form {
+          input {
+            width: 100%;
+            margin-top: 10px;
+          }
+
+          button {
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 15px;
+          }
+        }
+        
+        
+      }
+   
+    }
+  }
+
+  
+
+
 }

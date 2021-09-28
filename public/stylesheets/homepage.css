@@ -165,7 +165,7 @@ body > h2 {
   margin-top: 10px;
 }
 
-.bottom .comment .input-button input {
+.bottom .comment input {
   float: left;
   width: 85%;
   border: 1px solid #ffecec;
@@ -175,7 +175,7 @@ body > h2 {
   height: 35px;
 }
 
-.bottom .comment .input-button button {
+.bottom .comment button {
   float: right;
   height: 35px;
   border: 1px solid #7bec86;
@@ -216,5 +216,45 @@ body > h2 {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 670px) {
+  .nav-bar {
+    margin-top: -60px;
+    position: relative !important;
+  }
+  .wrapper {
+    height: auto;
+    width: 95%;
+  }
+  .wrapper .left {
+    text-align: center;
+    width: 100%;
+  }
+  .wrapper .left img {
+    width: auto;
+  }
+  .wrapper .right {
+    width: 100%;
+  }
+  .wrapper .right .container h1, .wrapper .right .container h4 {
+    text-align: center;
+  }
+  .wrapper .right .container-bottom h4 {
+    text-align: center;
+  }
+  .wrapper .bottom {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .wrapper .bottom .comment form input {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .wrapper .bottom .comment form button {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 15px;
+  }
 }
 /*# sourceMappingURL=homepage.css.map */

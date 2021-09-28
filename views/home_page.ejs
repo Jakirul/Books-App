@@ -46,10 +46,10 @@
             <div class="comment">
                 <% if (currentUser) { %>
                   <form action="/books/<%= books[i]._id %>/comments" method="POST">
-                    <div class="input-button">
-                      <input type="text" name="comment"  maxlength="100" required/>
-                      <button>Submit</button>
-                    </div>
+                   
+                    <input type="text" name="comment"  maxlength="100" required/>
+                    <button>Submit</button>
+                    
                   </form>
                   <div style="clear:both"></div>
                 <% } else { %>
@@ -101,10 +101,6 @@
         }
       })
       })
-
-      
-     
-
     </script>
   </body>
 </html>

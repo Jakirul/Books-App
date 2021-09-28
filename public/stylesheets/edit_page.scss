@@ -66,3 +66,24 @@ body {
     }
   }
 }
+
+
+@media screen and (max-width: 700px) {
+  
+  .nav-bar {
+    top: -100px;
+    position: relative;
+  }
+
+  
+  .wrapper {
+    position: absolute;
+    width: 95%;
+  
+
+    .inner-wrapper {
+      width: 80%;
+    }
+  }
+
+}

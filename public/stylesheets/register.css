@@ -13,7 +13,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .nav-bar .left .hovers {
@@ -68,6 +68,49 @@ body {
 
 .book-wrapper {
   margin-top: 30px;
+}
+
+.close1 {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .hiddennav {
+    display: none;
+  }
+  .close1 {
+    display: block;
+    position: relative;
+    width: auto;
+    z-index: 1;
+  }
+  .close1 .close {
+    position: absolute;
+    font-size: 50px;
+    right: 15px;
+    top: -100px;
+  }
+  .nav-bar {
+    text-align: center;
+    width: 90%;
+    position: absolute;
+  }
+  .nav-bar .left .hovers {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-bar .left .hovers h2 {
+    text-align: center;
+  }
+  .nav-bar .right .hovers {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-bar .right .hovers h2 {
+    text-align: center;
+  }
 }
 
 .wrapper {
@@ -137,5 +180,18 @@ body {
           box-shadow: 0 4px 4px #c4bcbc;
   border-radius: 12px;
   height: 40px;
+}
+
+@media screen and (max-width: 670px) {
+  .nav-bar {
+    margin-top: -60px;
+    position: relative !important;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  .wrapper .inner-wrapper {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=register.css.map */

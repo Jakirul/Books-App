@@ -10,7 +10,12 @@ Written using HTML / CSS / JavaScript / Node.js / Express.js / MongoDB
 - Sign In or Register
 - Authentication
 
-## Live Website
+## Planning and Live Website
+
+I planned the website using Figma, which can be seen in the link below:\
+https://www.figma.com/file/wly6T8SEAPSitrrfqrf8NU/Books-App?node-id=0%3A1
+
+The link to the live website is:\
 https://vast-forest-30320.herokuapp.com/books
 
 ## Images

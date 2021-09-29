@@ -6,7 +6,7 @@ $button_edit: #3acefd;
 * {
   font-weight: 500;
   scrollbar-width: auto;
-  scrollbar-color: #8f54a0 #ffffff;
+  scrollbar-color: #8f54a0 #f5f5f5;
 
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -19,7 +19,7 @@ $button_edit: #3acefd;
 }
 *::-webkit-scrollbar-thumb {
   background-color: #8f54a0;
-  border: 3px solid #ffffff;
+  border: 3px solid #f5f5f5;
 }
 
 body {
@@ -102,10 +102,9 @@ body {
     .container {
       h1 {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 25px;
         margin-top: 0px;
-        white-space: nowrap;
-        overflow: auto;
+      
       }
       h4 {
         margin-top: -20px;

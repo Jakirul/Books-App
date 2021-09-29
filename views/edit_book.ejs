@@ -19,7 +19,7 @@
         <form action="/<%= book[0]._id %>/edit?_method=PUT" method="POST">
             <div class="inner-wrapper">
                 <label for="book_name">Book Name </label>
-                <input name="book_name" id="book_name" value="<%= book[0].book_name %>" required>
+                <input name="book_name" id="book_name" value="<%= book[0].book_name %>" maxlength="120" required>
      
                 <label for="author">Author</label>
                 <input name="author" id="author" value="<%= book[0].author %>" required>

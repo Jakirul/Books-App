@@ -86,7 +86,6 @@ body {
     }
     img {
       height: 352px;
-      // width: 254px;
       width: 100%;
       border-radius: 18px;
       box-shadow: 0 4px 4px #f5ecec;
@@ -96,8 +95,7 @@ body {
   .right {
     float: right;
     width: 50%;
-
-    
+    margin-bottom: 20px;
 
     .container {
       h1 {
@@ -152,7 +150,6 @@ body {
 
   .bottom {
     clear: both;
-    margin-top: 400px;
 
     .view-comments {
       height: 35px;
@@ -165,8 +162,6 @@ body {
     }
 
     .comment {
-      margin-top: 10px;
-
       
         input {
           float: left;

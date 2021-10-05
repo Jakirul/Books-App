@@ -18,7 +18,8 @@
         <h1>Edit a Book Post</h1>
         <form action="/<%= book[0]._id %>/edit?_method=PUT" method="POST">
             <div class="inner-wrapper">
-                <label for="book_name">Book Name </label>
+
+                <label for="book_name">Book Name</label>
                 <input name="book_name" id="book_name" value="<%= book[0].book_name %>" maxlength="120" required>
      
                 <label for="author">Author</label>
@@ -35,10 +36,10 @@
 
             </div>
 
-            
             <div class="button">
                 <button>Save</button>
             </div>
+
         </form>
     </div>
 </body>

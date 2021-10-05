@@ -225,11 +225,15 @@ body {
   
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
   .nav-bar   {
     margin-top: -60px;
     position: relative !important;
   }
+}
+
+@media screen and (max-width: 670px) {
+  
 
   .wrapper {
     height: auto;
